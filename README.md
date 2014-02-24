@@ -10,6 +10,6 @@ If you would like to use this file, follow these instructions:
     git remote add origin git@github.com:wadewegner/bash_profile_PC.git
     git pull origin master
   
-Close terminal and open it again.
+Close Git Bash and open it again.
 
 Enjoy!
