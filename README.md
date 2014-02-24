@@ -1,4 +1,4 @@
-bash_profile_OSX
+bash_profile_PC
 ================
 
 This is the .bash_profile file for my PC.
