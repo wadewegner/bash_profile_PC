@@ -1,4 +1,16 @@
-alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+#alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+#alias np="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+
+subl ()
+{
+    /c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe $* &
+}
+
+np ()
+{
+    /c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
+}
+
 alias reset='git reset --hard HEAD;git clean -d -f .'
 alias ls='ls -lhaG'
 alias reload='source ~/.bash_profile'
