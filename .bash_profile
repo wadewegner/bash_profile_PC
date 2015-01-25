@@ -9,11 +9,16 @@ np ()
     /c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
 }
 
+# copy output of last command to clipboard
+pb()
+{
+    history -p '!!' | clip
+}
+
 alias chrome="/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe"
 
 alias bp="subl ~/.bash_profile"
 alias reload='source ~/.bash_profile'
-
 
 # listing
 alias ls='ls --color=auto'
@@ -52,14 +57,13 @@ alias gogithub='cd /c/Projects/Go/src/github.com'
 alias blog='cd /c/Projects/Github/WadeWegner/wadewegner.github.com'
 
 # git
+alias ga="git add"
+alias gc="git commit -m"
 alias gpd="git push origin develop"
 alias gpm="git push origin master"
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 alias reset='git reset --hard HEAD;git clean -d -f .'
-alias s='git status -s'
-
-# copy output of last command to clipboard
-alias cl="fc -e -|pbcopy"
+alias gs='git status -s'
 
 # Get your current public IP
 alias ip="curl icanhazip.com"
