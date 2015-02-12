@@ -4,6 +4,11 @@ subl ()
     /c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe $* &
 }
 
+vs ()
+{
+	/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 12.0/Common7/IDE/devenv.exe $* &
+}
+
 np ()
 {
     /c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
