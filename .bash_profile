@@ -9,6 +9,12 @@ np ()
     /c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
 }
 
+al ()
+{
+	source /c/temp/creds
+	azure login -u $username -p $password
+}
+
 # copy output of last command to clipboard
 pb()
 {
@@ -24,6 +30,7 @@ alias reload='source ~/.bash_profile'
 alias ls='ls --color=auto'
 alias ll='ls -lhaG'
 alias l.='ls -d .* --color=auto'
+alias lwoe="ls -R -p | grep -v '/$' | grep -v '\.' | grep ."
 
 # clearing
 alias cls='clear'
@@ -64,9 +71,12 @@ alias gpm="git push origin master"
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 alias reset='git reset --hard HEAD;git clean -d -f .'
 alias gs='git status -s'
+alias ignore='git update-index --assume-unchanged'
+alias unignore='git update-index --no-assume-unchanged'
 
 # Get your current public IP
 alias ip="curl icanhazip.com"
 
 # continue
 alias wget="wget -c"
+
