@@ -78,6 +78,7 @@ alias reset='git reset --hard HEAD;git clean -d -f .'
 alias gs='git status -s'
 alias ignore='git update-index --assume-unchanged'
 alias unignore='git update-index --no-assume-unchanged'
+alias latest='git log --format="%H" -n 1'
 
 # Get your current public IP
 alias ip="curl icanhazip.com"
